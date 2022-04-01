@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/product.css">
+   <link rel="stylesheet" href="styles/navbar.css">
+   <link rel="stylesheet" href="styles/footer.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+   <title>What's New | SHOPBOP</title>
+</head>
+
+<body>
+
+   <div class="container">
+      <!-- top bar writing here -->
+      <div id="container_top">
+         <!-- here top bar added from js -->
+      </div>
+      <!-- end here -->
+
+      <div class="prodSiteContainer">
+         <div class="pageHeading-span">
+            <span>WHAT'S NEW</span>
+         </div>
+         <div class="page-container">
+            <div class="left-nav-list">
+               <ul class="ul-left-nav-list">
+                  <li class="nav-list1 sameLiDesign">Shop All</li>
+                  <li class="nav-list2 sameLiDesign">New Today</li>
+                  <li class="nav-list3 sameLiDesign">Clothing</li>
+                  <li class="nav-list4 sameLiDesign">Shoes</li>
+                  <li class="nav-list5 sameLiDesign">Bags</li>
+                  <li class="nav-list6 sameLiDesign">Jewelry & Accessories</li>
+                  <li class="nav-list7 sameLiDesign">Designer Boutique</li>
+                  <li class="nav-list8 sameLiDesign">Men</li>
+               </ul>
+            </div>
+            <div class="mainProdDataApeend">
+               <div class="headingimg">
+                  <img
+                     src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/mastheads/2022/2022_02/sb_20220223_desktop_WNMH_thegreat_1-0.jpg"
+                     id="ProdheadImg" alt="">
+               </div>
+               <div class="itemsViewCount">
+                  <div class="countItems">20 items</div>
+                  <div class="viewText">View</div>
+                  <button id="view20items" onclick="show20Data()">20</button>
+                  <button id="view45items" onclick="show45Data()">45</button>
+               </div>
+               <!-- appending data from js here -->
+               <div class="productItemsMain-div">
+                  <ul class="products-ul">
+                     <!-- the main products data appended from js here -->
+                  </ul>
+               </div>
+               <!-- end here -->
+            </div>
+         </div>
+      </div>
+
+      <!-- footer part begin here -->
+      <footer id="footer">
+         <!-- here footer added from js -->
+      </footer>
+      <!-- end here -->
+   </div>
+</body>
+
+</html>
+<script src="scripts/product.js"></script>
+
+<script type="module">
+
+
+   // ----navbar imported------//
+   import navbar from "./component/navbar.js";
+    let topcontainer = document.getElementById("container_top");
+    topcontainer.innerHTML = navbar();
+    // here footer imported
+    import footer from "./component/footer.js";
+    let footerDiv = document.getElementById("footer");
+    footerDiv.innerHTML = footer();
+
+   
+    // prodect image go to home page
+
+    let logo = document.getElementById("logoimg");
+    logo.addEventListener("click",function(){
+        window.location.href = "index.html"
+    });
+
+
+   // adding cart items 
+
+   let cartProductCount = document.getElementById("cartcount");
+
+   let getCartData = JSON.parse(localStorage.getItem("cartProductData")) || [];
+   console.log(getCartData.length);
+
+   cartProductCount.innerHTML = getCartData.length;
+
+      //name changing part--------------------------------------------------------
+    
+      let usersData = JSON.parse(localStorage.getItem("UsersData"));
+    if(usersData.length >=1){
+        let namechange = document.querySelector(".hidename");
+        namechange.textContent = "Hi,"+ usersData[0].UserName;
+        let signoutbtn = document.querySelector(".outbtn");
+        let div = document.createElement("a");
+        div.textContent = "Sign Out";
+        
+        div.addEventListener("click",()=>{
+
+            let signin = document.querySelector(".hidename");
+            signin.textContent = "Sign In / Register";
+            signin.addEventListener("click",()=>{
+                localStorage.clear("UsersData");
+                window.location.href = "signIn.html"
+            })
+            let clear = document.querySelector(".outbtn");
+            clear.innerHTML="";
+        })
+        signoutbtn.append(div)
+    }
+
+
+// end here 
+
+</script>

@@ -8,18 +8,302 @@
     <title>Shopbop - Top Designer Apparel, Shoes, Accessories & More</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <div id="container_top">
+    <header id="container_top">
         <!-- navbar display here -->
-    </div> 
+    </header>
+
+      <!-- head main bg begin here -->
+
+      <div class="startHeadingDiv">
+        <div class="startimg">
+          <img src="images/firstHeading Img.png" id="startheadImg" alt="There must be a problem with the server image not being
+                    automatically uploaded" />
+        </div>
+        <div class="after-start-Img-Div">
+          <ul class="ul-after-start-img">
+            <li class="li-afterImg1">
+              <img
+                src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_02/sb_20220227_hp_card_VISNAV_staud_01bags._QL90_UX373_.jpg"
+                alt="" id="afterimgid1" />
+              <div class="blackSameDesign">
+                <p class="textSame">It Bags</p>
+              </div>
+            </li>
+            <li class="li-afterImg2">
+              <img
+                src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_02/sb_20220227_hp_card_VISNAV_staud_02clothing._QL90_UX373_.jpg"
+                alt="" id="afterimg2" />
+              <div class="blackSameDesign">
+                <p class="textSame">Vacation-Bound Clothing</p>
+              </div>
+            </li>
+            <li class="li-afterImg3">
+              <img
+                src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_02/sb_20220227_hp_card_VISNAV_staud_03shoes._QL90_UX373_.jpg"
+                alt="" id="afterimg3" />
+              <div class="blackSameDesign">
+                <p class="textSame">Polished Pairs</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- end here -->
+  
+      <!-- items slide images begin here -->
+      <div class="items-container">
+        <div class="itemshead">
+          <div class="itemsTexts">
+            <h3 class="title1">SEE THE LATEST</h3>
+            <div class="shopAlllink">
+              <h1 class="title2">What's New</h1>
+              <h3 class="shopAll linkfontstyle" onclick="gotoProdPage()">Shop All</h3>
+            </div>
+          </div>
+          <div class="itemsSlidebar">
+            <div class="slide-main" id="slide-main">
+              <div class="mainslide-con-div1">
+                <!-- here item images added from js -->
+              </div>
+              <div class="mainslide-con-div2">
+                <!-- here item images added from js -->
+              </div>
+              <div class="mainslide-con-div3">
+                <!-- here item images added from js -->
+              </div>
+            </div>
+            <button onclick="prevProd()" class="preBtn"><i class="fa fa-angle-left"
+                style="font-size:24px; color: white;"></i></button>
+            <button onclick="nextProd()" class="nextBtn"><i class="fa fa-angle-right"
+                style="font-size:24px; color: white;"></i></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- ending here -->
+  
+      <!-- visualNav part beging here -->
+      <div class="visualNav">
+        <div class="visualNavText">
+          <p class="visualheading1">GET SOME INSPIRATION</p>
+          <p class="visualheading2">What Are You Looking For?</p>
+        </div>
+        <ul class="visualImages">
+          <li>
+            <img class="visImgText"
+              src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220321_hp_card_visnav_vacation._QL90_UX226_.jpg"
+              alt="There must be a problem with the server image not
+                       being automatically uploaded" />
+            <div class="textVisual1 desVidiv">
+              <p class="img1-text designtxt">Vocation Wardrobe</p>
+            </div>
+          </li>
+          <li>
+            <img class="visImgText"
+              src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220321_hp_card_visnav_dressshop._QL90_UX226_.jpg"
+              alt="There must be a problem with the server image not
+                       being automatically uploaded" />
+            <div class="textVisual2 desVidiv">
+              <p class="img2-text designtxt">The Dress Shop</p>
+            </div>
+          </li>
+          <li>
+            <img class="visImgText"
+              src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220321_hp_card_visnav_bestdressed._QL90_UX226_.jpg"
+              alt="There must be a problem with the server image not
+                       being automatically uploaded" />
+            <div class="textVisual3 desVidiv">
+              <p class="img3-text designtxt">Best-Dressed Guest</p>
+            </div>
+          </li>
+          <li>
+            <img class="visImgText"
+              src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220321_hp_card_visnav_spring._QL90_UX226_.jpg"
+              alt="There must be a problem with the server image not
+                       being automatically uploaded" />
+            <div class="textVisual4 desVidiv">
+              <p class="img4-text designtxt">Spring-Ready Styles</p>
+            </div>
+          </li>
+          <li>
+            <img class="visImgText"
+              src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220321_hp_card_visnav_everyday._QL90_UX226_.jpg"
+              alt="There must be a problem with the server image not
+                       being automatically uploaded" />
+            <div class="textVisual5 desVidiv">
+              <p class="img5-text designtxt">Everyday Essentials</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- ending here -->
+  
+      <!-- Creating backgrond img began here -->
+      <div class="headingImg">
+        <img src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220314_desktop_M1_newarrivals._FMwebp_UX1500_.jpg" alt="There must be a problem with the server image not being
+                 automatically uploaded" id="bgimg" />
+      </div>
+      <!-- end here -->
+  
+      <!-- destination and arm imges begin here -->
+      <section class="destination-arm-section">
+        <div class="destinationImgDiv">
+          <img
+            src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220328_hp_card_2up_editorspicks._QL90_UX800_.jpg"
+            alt="" />
+          <div class="destinationTextDiv">
+            <p class="destinText1">EDITORS'S PICKS</p>
+            <hr class="hr-line" />
+            <p class="destinText2">Staffer-favorite styles for your next <br> getaway.</p>
+          </div>
+        </div>
+        <div class="armImgDiv">
+          <img
+            src="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220328_hp_card_2up_partypieces._QL90_UX800_.jpg"
+            alt="" />
+          <div class="armTextDiv">
+            <p class="armText1">STATEMENT MAKERS</p>
+            <hr class="hr-line" />
+            <p class="armText2">Turn heads in our party-perfect <br> jewelry</p>
+          </div>
+        </div>
+      </section>
+      <!-- ending here -->
+  
+      <!-- items slide images 2 begin here -->
+      <div class="items-container2">
+        <div class="itemshead2">
+          <div class="itemsTexts2">
+            <h3 class="title1-2">FAVORITE FINDS</h3>
+            <div class="shopAlllink2">
+              <h1 class="title2-2">Most-Hearted Styles</h1>
+              <h3 class="shopAll2 linkfontstyle2" onclick="gotoProdPage()">Shop All</h3>
+            </div>
+          </div>
+          <div class="itemsSlidebar2">
+            <div class="slide-main-2" id="slide-main2">
+              <div class="mainslide-con-div1-2">
+                <!-- here item images added from js -->
+              </div>
+              <div class="mainslide-con-div2-2">
+                <!-- here item images added from js -->
+              </div>
+              <div class="mainslide-con-div3-2">
+                <!-- here item images added from js -->
+              </div>
+            </div>
+            <button onclick="prevProd2()" class="preBtn2"><i class="fa fa-angle-left"
+                style="font-size:24px; color: white;"></i></button>
+            <button onclick="nextProd2()" class="nextBtn2"><i class="fa fa-angle-right"
+                style="font-size:24px; color: white;"></i></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ending here -->
+  
+    <!-- Creating backgrond img 3 began here -->
+    <div class="BgImg3Div">
+      <img src="images/third bgImg.png" alt="There must be a problem with the server image not being
+                       automatically uploaded" id="BgImg3" />
+    </div>
+    <!-- end here -->
+  
+    <!-- items slide images 3 begin here -->
+    <div class="items-container3">
+      <div class="itemshead3">
+        <div class="itemsTexts3">
+          <h3 class="title1-3">LOOK WHAT'S HERE</h3>
+          <div class="shopAlllink3">
+            <h1 class="title2-3">Back-In-Stock Styles</h1>
+            <h3 class="shopAll3 linkfontstyle3" onclick="gotoProdPage()">Shop All</h3>
+          </div>
+        </div>
+        <div class="itemsSlidebar3">
+          <div class="slide-main-3" id="slide-main3">
+            <div class="mainslide-con-div1-3">
+              <!-- here item images added from js -->
+            </div>
+            <div class="mainslide-con-div2-3">
+              <!-- here item images added from js -->
+            </div>
+            <div class="mainslide-con-div3-3">
+              <!-- here item images added from js -->
+            </div>
+          </div>
+          <button onclick="prevProd3()" class="preBtn3"><i class="fa fa-angle-left"
+              style="font-size:24px; color: white;"></i></button>
+          <button onclick="nextProd3()" class="nextBtn3"><i class="fa fa-angle-right"
+              style="font-size:24px; color: white;"></i></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- ending here -->
+
+
+    <!-- footer part -->
+
+    <footer id="footer">
+<!-- ------footer display -->
+    </footer>
 </body>
 <script type="module">
     // ----navbar imported------//
     import navbar from "./component/navbar.js";
-let topcontainer = document.getElementById("container_top");
-topcontainer.innerHTML = navbar();
+    let topcontainer = document.getElementById("container_top");
+    topcontainer.innerHTML = navbar();
+    // here footer imported
+    import footer from "./component/footer.js";
+    let footerDiv = document.getElementById("footer");
+    footerDiv.innerHTML = footer();
 
+    // prodect image go to home page
 
+    let logo = document.getElementById("logoimg");
+    logo.addEventListener("click",function(){
+        window.location.href = "index.html"
+    });
+
+    //name changing part--------------------------------------------------------
+    
+    let usersData = JSON.parse(localStorage.getItem("UsersData"));
+    if(usersData.length >=1){
+        let namechange = document.querySelector(".hidename");
+        namechange.textContent = "Hi,"+ usersData[0].UserName;
+        let signoutbtn = document.querySelector(".outbtn");
+        let div = document.createElement("a");
+        div.textContent = "Sign Out";
+        
+        div.addEventListener("click",()=>{
+
+            let signin = document.querySelector(".hidename");
+            signin.textContent = "Sign In / Register";
+            signin.addEventListener("click",()=>{
+                localStorage.clear("UsersData");
+                window.location.href = "signIn.html"
+            })
+            let clear = document.querySelector(".outbtn");
+            clear.innerHTML="";
+        })
+        signoutbtn.append(div)
+    }
+  
+
+     //-----signout button create ^^------//
+
+    
 </script>
+<script src="scripts/index.js"></script>
+<script>
+
+    function gotoProdPage() {
+      window.location.href = "product.html";
+    }   
+</script>
+
 </html>

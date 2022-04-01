@@ -203,6 +203,14 @@ body {
     display: block;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+  }
+
+#cartcount{
+    font-size: 12px;
+}
+
 /* ------logo------ */
 #logo {
     padding: 0px;

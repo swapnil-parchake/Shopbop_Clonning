@@ -1,11 +1,11 @@
-function navbar(){
+function navbar() {
     return `  <div id="topnav">
     <div id="topnavbox1">
         <div class="dropdown">
             <div class="dropbtn">
                 <div><i class="fa fa-map-marker" style="font-size:18px"></i></div>
                 <div>IN</div>
-                <div><i class="fa fa-angle-down" style="font-size:22px"></i></div>
+                <div><i class="fa fa-angle-down" style="font-size:14px; color:gray"></i></div>
             </div>
             <div class="dropdown-content">
                 <div id="navline">
@@ -40,7 +40,7 @@ function navbar(){
         <div class="dropdown">
             <div class="dropbtn">
                 <div>EN</div>
-                <div><i class="fa fa-angle-down" style="font-size:22px"></i></div>
+                <div><i class="fa fa-angle-down" style="font-size:14px; color:gray"></i></div>
             </div>
             <div class="dropdown-content2">
                 <div id="navline">
@@ -60,7 +60,7 @@ function navbar(){
         <div class="dropdown">
             <div class="dropbtn">
                 <div>₹INR</div>
-                <div><i class="fa fa-angle-down" style="font-size:22px"></i></div>
+                <div><i class="fa fa-angle-down" style="font-size:14px; color:gray"></i></div>
             </div>
             <div class="dropdown-content3">
                 <div id="navline1">
@@ -109,30 +109,33 @@ function navbar(){
     <div id="topnav_last">
         <div class="dropdown">
             <div class="dropbtn">
-                <div><a href="#">Sign In / Register</a></div>
-                <div><i class="fa fa-angle-down" style="font-size:18px"></i></div>
+            <div class="hidename">
+            <label for="SignReg" class="cursor-pointer"><span onclick="goToSignInPage()">Sign In</span> / <span onclick="goToRegisterPage()">Register</span></label>
+            </div>
+                <div><i class="fa fa-angle-down" style="font-size:14px; color:gray"></i></div>
             </div>
             <div class="dropdown-content4">
                 <div id="navline">
                     <div><a href="#"> Account</a></div>
-                    <div><a href="">Orders</a></div>
-                    <div><a href="">My Loyalty</a></div>
-                    <div><a href="">My Reviews</a></div>
-                    <div><a href="">My Hearts</a></div>
-                    <div><a href="">My Wish List</a></div>
-                    <div><a href="">My Designers</a></div>
+                    <div><a href="#">Orders</a></div>
+                    <div><a href="#">My Loyalty</a></div>
+                    <div><a href="#">My Reviews</a></div>
+                    <div><a href="#">My Hearts</a></div>
+                    <div><a href="#">My Wish List</a></div>
+                    <div><a href="#">My Designers</a></div>
+                    <div class="outbtn"></div>
                 </div>
             </div>
         </div>
         <div><i class="fa fa-heart" style="font-size:20px;color: rgb(252,176,139);"></i></div>
-        <div id="cart"><img
+        <div id="cart" onclick="gotoCartPage()"><img
                 src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/_global/images/topnav/bag_1-0.png">
         </div>
         <div id="cartcount"></div>
     </div>
 </div>
 <div id="logo">
-    <center> <img onclick="home()"
+    <center> <img id="logoimg"
             src="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/3/images/logos/rebrand_shopbop_logo_2x_1-3.png">
     </center>
 </div>
